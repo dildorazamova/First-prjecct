@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <script src="js/script.js" defer></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_items">
+                <div class="header_content">
+                    <h1 class="header_logo">Brooklyn Public Library</h1>
+                    <div class="user_menu">
+                        <div class="header_menu">
+                            <a href="#wrapper">About</a>
+                            <a href="#favorites">Favorites</a>
+                            <a href="#coffee">Coffee shop</a>
+                            <a href="#location">Contacts</a>
+                            <a href="#footer"  >Library Card</a>
+                        </div>
+                        <div class="menu_open">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="img">
+    </section>
+        
+    <section id="wrapper" class="wrapper">
+        <div class="container">
+            <h1 class="item_text">About</h1>
+            <h2 class="item_drop"></h2>
+            <h3 class="item_descr">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </h3>
+            <div class="wrapper_content">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="corusel">
+                <img src="img/second.png" alt="" draggable="false">
+                <img src="img/second_page1.png" alt="" draggable="false">
+                <img src="img/second_page2.png" alt="" draggable="false">
+                <img src="img/second3.png" alt="" draggable="false">
+                <img src="img/second4.png" alt="" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="favorites" class="favorites">
+        <div class="container">
+            <h2 class="favorites_title">Favorites</h2>
+        <h1 class="drop"></h1>
+        <h2 class="text">Pick favorites of season</h2>
+        <!-- menu -->
+           <form action="" id="favorite_buttons">
+               <div class="favorite_btn">
+                <input required  id="favorite_btn2" type="radio" name="gender">
+                <label for="">winter</label>
+               </div>
+               <div class="favorite_btn">
+                <input required  id="favorite_btn3" type="radio" name="gender">
+                <label for="">spring</label>
+               </div>
+               <div class="favorite_btn">
+                <input required  id="favorite_btn4" type="radio" name="gender">
+                <label for="">summer</label>
+               </div>
+               <div class="favorite_btn">
+                <input required  id="favorite_btn1" type="radio" name="gender">
+                <label for="">autumn</label>
+               </div>
+           </form>  
+            <div id="favorite_card"></div>
+        </div>
+    </section>   
+        
+    <section id="coffee" class="coffee">
+        <div class="container">
+            <div class="coffee_items">
+                <h2 class="coffee_title">Coffee shop</h2>
+                <div class="drop"></div>
+                <h2 class="coffee_descr">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation.you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</h2>
+                <div class="coffee_content">
+                    <div class="coffee_item">
+                        <h2 class="item_title">Coffee & Tea </h2>
+                        <div id="item_price">
+                            
+                        </div>
+                    </div>
+                    <div class="coffe_item">
+                        <h2 class="item_title">Desserts & Cakes</h2>
+                        <div id="item_prices">
+                            
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section_items">
+                <h3 class="location_title">Our Contacts</h3>
+                <div class="drop"></div>
+                <div class="location_content">
+                    <div class="first_item">
+                        <h2 class="item_name">For all Library inquiries: </h2>
+                        <p class="item_title">Please call (617) 730-2370</p>
+                        <p class="item_title">For TTY service, please call (617) 730-2370</p>
+                        <p class="item_title">Putterham Library: (617) 730-2385</p>
+                        <h2 class="item_name">Senior Staff</h2>
+                        <div class="item_direction">
+                            <p class="item_title">Library Director:</p>
+                            <h3 class="item_name"> Amanda Hirst</h3>
+                        </div>
+                    </div>
+                    <img src="img/location.png" alt="" class="item_img">
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="cards">
+        <div class="container">
+            <div class="cards_items">
+                <h3 class="cardws_title">Digital Library Cards</h3>
+                <div class="drop"></div>
+                <div class="cards_content">
+                    <div class="first_item">
+                        <h3 class="item_title">Find your Library card</h3>
+                        <div class="item_cards">
+                            <form class="item_form" action="">
+                                <div class="item_register">
+                                    <h3 class="card_name">Brooklyn Public Library</h3>
+                                    <input required type="text" placeholder="Reader's name " class="user_name">
+                                    <input required type="text" placeholder="Card number" class="user_name">
+                                </div>
+                                <button class="item_btn">Check the card</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="second_item">
+                        <h3 class="second_text">Get a reader card</h3>
+                        <p class="second_descr">You will be able to see a reader card after logging into account or you can register a new account</p>
+                        <div class="second_btn">
+                            <button class="log_btn">Sign Up</button>
+                            <button class="log_btns">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-card">
+        <div class="second_cards">
+            <div class="container">
+                <div class="cards_items">
+                    <h3 class="cardws_title">Your Library card</h3>
+                    <div class="drop"></div>
+                    <div class="cards_content">
+                        <div class="first_item">
+                            <h3 class="item_title">Find your Library card</h3>
+                            <div class="item_cards">
+                                <form class="item_form" action="">
+                                    <div class="item_register">
+                                        <h3 class="card_name">Brooklyn Public Library</h3>
+                                        <input required type="text" placeholder="Reader's name " class="user_name">
+                                        <input required type="text" placeholder="Card number" class="user_name">
+                                    </div>
+                                    <div class="logos_card">
+                                       <div class="logo_card">
+                                            <h2 class="text">visits</h2>
+                                            <i class="fa-regular fa-user"></i>
+                                            <p class="number">23</p>
+                                       </div>
+                                       <div class="logo_card">
+                                            <h2 class="text">bonuses</h2>
+                                            <i class="fa-solid fa-certificate"></i>
+                                            <p class="number">1240</p>
+                                       </div>
+                                       <div class="logo_card">
+                                            <h2 class="text">Books</h2>
+                                            <i class="fa-solid fa-book"></i>
+                                            <p class="number">2</p>
+                                       </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="second_item">
+                            <h3 class="second_text">Visit your profile</h3>
+                            <p class="second_descr">With a digital library card you get free access to the Library’s wide array of digital resources including e-books, databases, educational resources, and more.</p>
+                            <div class="second_btn">
+                                <button class="log_btn">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="footer_items">
+                <div class="first_content">
+                    <div class="first_item">
+                        <div class="item_text">286 Cadman Plaza, New York, NY 11238, United States</div>
+                        <div class="item_menu">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <div class="second_item">
+                        <div class="item_dates">
+                            <div class="item_data">Mon - Fri</div>
+                            <div class="item_clock">08:00 am - 07:00 pm</div>
+                        </div>
+                        <div class="item_dates">
+                            <div class="item_data">Sat - Sun</div>
+                            <div class="item_clock">10:00 am - 06:00 pm</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_content">
+                    <h3 class="item_year">2023</h3>
+                    <h3 class="item_year">The Rolling Scopes School</h3>
+                    <h3 class="item_year">Username</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <nav class="modal_wrapper">
+        <div class="modal">
+            <div class="modal_items">
+                <div class="modal_menu">
+                    <h1 class="modal_title">Buy a library card</h1>
+                    <div class="i"><i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="menu_content">
+                    <form id="modal_form" class="modal_price">
+                        <label>Bank card number</label>
+                        <input required type="number" name="number" id="number">
+                        <label>Expiration code</label>
+                        <div class="two_input required">
+                            <input required type="number" name="bank" id="bank">
+                            <input required type="number" name="code" id="code">
+                        </div>
+                        <label>CVC</label>
+                        <input required type="number" name="cvc" id="cvc">
+                        <label>Cardholder name</label>
+                        <input required type="text" name="cardholder" id="cardholder">
+                        <label>Postal code</label>
+                        <input required type="password" name="password" id="password">
+                        <label>City / Town</label>
+                        <input required type="text" name="town" id="town">
+                        <div class="item_btn">
+                            <button type="submit" id="send" class="modal_btn">Buy</button>
+                            <div class="item_price">$25.00</div>
+                        </div>
+                    </form>
+                    <div class="item_text">
+                        If you are live, work, attend school, or pay property taxes in New York State, you can get a $25 digital library card right now using this online form. Visitors to New York State can also use this form to apply for a temporary card.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profiles">
+        <div class="profile">
+            <h3 class="profile_item">Profile</h3>
+            <div class="drop"></div>
+            <div id="profile_content" class="profile_content">
+                <h4 class="prof_text">Log In</h4>
+                <h4 class="profil_text">Register</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="log">
+            <h3 class="log_item">Profile</h3>
+            <div class="drop"></div>
+            <div class="log_content">
+                <h4 class="profil_text">My profile</h4>
+                <h4 class="prof_text">Log Out</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="login_wrapper">
+        <div class="login_page">
+            <h2 class="login_text">LOGIN</h2>
+            <i class="fa-solid fa-x"></i>
+        <form id="form" class="login_content">
+            <div class="login_item">
+                <label for="email">E-mail or readers card</label>
+                <input required type="email" id="login_text">
+            </div>
+            <div class="login_item">
+                <label for="password">Password</label>
+                <input required type="password" id="login_password" >
+            </div>
+            <button id="login_btn" type="submit">Log In</button>
+        </form>
+        <div class="log_account">
+            <h3 class="log_text">Don’t have an account?</h3>
+            <a href="" class="log">Register</a>
+        </div>
+    </div>
+    </section>
+
+    <section id="register_wrapper">
+        <div class="register_page">
+            <h2 class="register_text">REGISTER</h2>
+            <i class="fa-solid fa-x"></i>
+        <form id="register_form" class="register_content">
+            <div class="register_item">
+                <label for="name">First name</label>
+                <input name="firstname" required type="text" id="name">
+            </div>
+            <div class="register_item">
+                <label for="last_name">Last name</label>
+                <input name="lastname" required type="text" id="text">
+            </div>
+            <div class="register_item">
+                <label for="email">E-mail</label>
+                <input name="email" required type="email" id="register_email">
+            </div>
+            <div class="register_item">
+                <label for="password">Password</label>
+                <input name="password" required type="password" id="register_password">
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="register_account">
+            <h3 class="registers_text">Already have an account?</h3>
+            <a href="" class="register">Login</a>
+        </div>
+        </div>
+    </section>
+
+   <section class="profile_menu">
+    <div class="profile_card">
+        <div class="first_item">
+            <div class="item_card">JD</div>
+            <div class="first_name">John Doe</div>
+        </div>
+        <div class="second_item">
+            <h2 class="item_text">My profile</h2>
+            <i class="fa-solid fa-x"></i>
+            <div class="item_card">
+                <div class="visit_card">
+                    <h2 class="visit_text">Visits</h2>
+                    <i class="fa-regular fa-user"></i>
+                    <p class="item_num">23</p>
+                </div>
+                <div class="first_card">
+                    <h2 class="visit_text">Bonuses</h2>
+                    <i class="fa-solid fa-certificate"></i>
+                    <p class="item_num">1240</p>
+                </div>
+                <div class="second_card">
+                    <h2 class="visit_text">Books</h2>
+                    <i class="fa-solid fa-book"></i>
+                    <p class="item_num">2</p>
+                </div>
+            </div>
+            <div class="books_name">
+                <h2 class="name_book">Rented books</h2>
+                <li class="book_admin">The Last Queen, Clive Irving</li>
+                <li class="book_admin">Dominicana, Angie Cruz</li>
+            </div>
+            <div class="number_card">
+                <h2 class="number">Card number</h2> 
+                <span>F00234030</span>
+                <i class="fa-regular fa-copy"></i>
+            </div>
+        </div>
+    </div>
+   </section>
+
+  
+
+    <script src="js/modal.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/price.js"></script>
+    <script src="js/favorite.js"></script>
+    <script src="js/buy.js"></script>
+</body>
+</html>

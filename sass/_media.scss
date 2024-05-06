@@ -1,0 +1,380 @@
+@media(max-width:1440px){
+    .container{
+        max-width: 1440px;
+        padding: 0 20px;
+        margin: 0 auto;
+
+    }
+    .header{
+        min-height: 90px;
+        width: 100%;
+        position: absolute;
+        .container{
+            padding: 0;
+            // margin: 0 20px;
+            .header_items{
+                min-height: 90px;
+            width: 100%;
+            .header_content{
+                background-color: #0C0C0E;
+                padding: 0 20px;
+                }
+            }
+        } 
+    }
+
+    .wrapper{
+        width: 100%;
+        .wrapper_content{
+            width: 100%;
+            .corusel{
+                width: 100%;
+                img{
+                    height: 560px;
+                    width: 32%;
+                    object-fit: cover;
+                    margin-left: 20px;
+                    &:first-child{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .favorites{
+        #favorite_card{
+     
+            grid-template-columns: repeat(2, auto);
+            display: grid;
+            gap: 15px;      
+            .card_ramk{
+                width: 550px;
+                .book_descr{
+                    width: 350px;
+                    height: 320px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .coffee{
+        .coffee_items{
+            .coffee_descr{
+                width: 100%;
+                height: 120px;
+            }
+        }
+    }
+}
+
+// @media(max-width: 992px){
+    
+// }
+
+@media(max-width:768px){
+    .container{
+        max-width: 768px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .header{
+        width: 100%;
+        min-height: 600px;
+        .header_items{
+            width: 100%;
+            min-height: 600px;
+            .header_content{
+                width: 100%;
+                overflow: hidden;
+                .header_logo{
+                    width: 500px;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 0;
+                    align-items: center;
+                }
+                .user_menu{
+                    // width: 100%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    gap: 40px;
+                    .header_menu{
+                        padding-top: 25px;
+                        width: 332px;
+                        min-height: 570px;
+                        position: absolute;
+                        margin: 0;
+                        top: 0;
+                        gap: 15px;
+                        // right: -100%;
+                        right: -1000px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        background: rgba(0, 0, 0, .6);
+                        transition: 0.3s all;
+                        border-bottom-left-radius: 20px;
+                        z-index: 25;
+                    }
+                    .menu_actives {
+                    transition: 0.3s all;
+                    right: 0;
+                    }
+                    .menu_open {
+                        display: flex;
+                        transition: 0.3s all;
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                        padding: 10px 0;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        z-index: 25;
+                        .line {
+                            display: block;
+                            height: 2.5px;
+                            width: 100%;
+                            background-color: #fff;
+                            transition: 0.3s all;
+                        }
+                    }
+                    .menu_close {
+                        transition: 0.3s all;
+                        .line {
+                            transition: 0.3s all;
+                            &:nth-child(1) {
+                                transform: rotate(45deg) translate(0, 11px);
+                            }
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                            &:nth-child(3) {
+                                transform: rotate(-45deg) translate(0, -13px);
+                            }
+                        }
+                    }
+                    i {
+                        position: relative;
+                        z-index: 25;
+                    }
+                }
+                
+            }
+        }
+    }
+    .wrapper{
+        max-width: 100%;
+        .wrapper_content{
+            width: 100%;
+            .corusel{
+                width: 450px;
+                margin-top: 20px;
+                i{
+                    height: 40px;
+                    width: 40px;
+                    position: absolute;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    line-height: 40px;
+                    &:first-child{
+                        left: 15px;
+                    }
+                    &:last-child{
+                        right: 15px;
+                    }
+        
+                }
+                img{
+                    width: 450px;
+                }
+            }
+        }
+    }
+    .favorites{
+        min-height: 2629px;
+        #favorite_buttons{
+            width: 700px;
+            .favorite_btn{
+                width: 114px;
+                align-items: center;
+                margin-right: 30px;
+            }
+        }
+        #favorite_card{
+            display: block;
+            justify-content: center;
+            .card_ramk{
+                width: 510px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                .item_title{
+                    width: 400px;
+                }
+                .book_descr{
+                    width: 300px;
+                }
+            }
+        }
+    } 
+    .coffee{
+        min-height: 1481px;
+        width: 100%;
+        .coffee_items{
+            min-height: 1481px;
+            width: 100%;
+            .coffee_descr{
+                position: absolute;
+                width: 100%;
+                height: 120px;
+                left: 20px;
+                right: 20px;
+                top: 121px;
+                bottom: 600px;
+                color: #000;
+                font-family: Inter;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 40px;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+            .coffee_content{
+                min-height: 1481px;
+                width: 100%;
+                position: relative;
+                top: 340px;
+                display: block;
+                .coffe_item{
+                    height: 620px; 
+                    width: 100%; 
+                    position: relative;
+                    right: 0;   
+                    margin: 0;
+                    margin-top: 40px;
+                    .item_title{
+                        position: absolute;
+                        right: 25px;
+                        top: 60px;
+                    }
+                    #item_prices{
+                        position: absolute;
+                        right: 0;
+                        top: 60px;
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .location{
+        min-height: 894px;
+        width: 100%;
+        .container{
+            padding: 0;
+            .section_items{
+                min-height: 894px;
+                width: 100%;
+                .location_content{
+                    min-height: 894px;
+                    width: 100%;
+                    display: block;
+                    .first_item{
+                        width: 894px;
+                        padding: 0 20px;
+                        min-height: 460px;
+                        .item_direction{
+                            width: 507px;
+                            display: flex;
+                        }
+                    }
+                    img{
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+    }
+    .cards{
+        min-height: 894px;
+        width: 100%;
+        margin: 0 auto;
+        .container{
+            padding: 0;
+            .cards_items{
+                min-height: 894px;
+                width: 100%;
+                .cards_content{
+                    display: block;
+                    .first_item{
+                        height: 453px;
+                        width: 540px;
+                        padding-left: 10px;
+                        margin: 0 auto;
+                        .item_cards{
+                            width: 500px;
+                            .item_form{
+                                .item_register{
+                                    width: 460px;
+                                    .user_name{
+                                        width: 420px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .second_item{
+                        width: 500px;
+                        margin: 0 auto;
+                        position: relative;
+                        .second_text{
+                            text-align: center;
+                        }
+                        .second_descr{
+                            position: absolute;
+                            width: 100%;
+                            height: 120px;
+                            left: 20px;
+                            right: 20px;
+                            top: 40px;
+                            bottom: 600px;
+                            color: #000;
+                            font-family: Inter;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 40px;
+                            letter-spacing: 2px;
+                            text-align: center;
+                        }
+                        .second_btn{
+                            width: 170px;
+                            display: flex;
+                            position: absolute;
+                            margin: 0 auto;
+                            left: 165px;
+                            right: 165px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 1200 - 993
+// 992 - 769 
+// 768 - 577
+// 576 - 320
